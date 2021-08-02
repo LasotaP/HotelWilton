@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con el soporte online, o con la recepción directa de nuestro hotel, para porder reservar o consultar sobre este mismo.">
+    <meta name="keywords" content="habitaciones, comodidades,alojamiento, desayuno, comida italiana, relajacion, spa, salon de eventos, fiestas, reserva, contacto">
+    <!-- css links -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- favicon links -->
+    <link rel="shortcut icon" href="../public/wilton.ico" type="image/x-icon">
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Contacto | Wilton</title>
+</head>
+<body>
+    <!-- inicio header -->
+    <header>
+        <div class="flexHeader">
+            <div class="cajaHeader">
+                <a href="../index.html"> <img src="../public/wilton.ico" alt=""> </a>
+                <h1><a id="tituloHeader" href="../index.html">Wilton</a></h1>
+            </div>
+            <!-- Inicio de la caja del nav -->
+            <div class="cajaHeader">
+                <nav>
+                  <ul class="listaNav">
+                      <li> <a id="enlaceInicio" class="listaNav__enlace" href="../index.html">Inicio</a> </li>
+                      <li>
+                          <a class="listaNav__enlace" href="./servicios.html">Servicios</a>
+                          <ul class="listaNav__lista">
+                              <li> <a href="./servicios.html#info-hotel">Hoteleria</a> </li>
+                              <li> <a href="./servicios.html#info-restaurant">Restaurat</a> </li>
+                              <li> <a href="./servicios.html#info-spa">SPA</a> </li>
+                              <li> <a href="./servicios.html#info-eventos">Eventos</a> </li>
+                          </ul>
+                      </li>
+                      <li> <a class="listaNav__enlace" href="./galeria.html">Galeria</a> </li>
+                      <li> <a class="listaNav__enlace" href="./contacto.html">Contacto</a> </li>
+                      <li> <a id="enlaceFAQ" class="listaNav__enlace" href="./preguntas_frecuentes.html">F.A.Q.</a> </li>
+                  </ul>
+                </nav>
+            </div>
+            <!-- Fin de la caja del nav -->
+        </div>
+    </header>
+    <!-- Inicio del main -->
+    <main class="contacto">
+        <div class="grillaContacto">
+            <section class="contactoOpcionUno ventanaBordes">
+                <form action="" method="">
+                    <!-- Formulario de datos personales -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input class="form-control" type="text" id="nombre" placeholder="Ingrese su nombre..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electronico:</label>
+                        <input class="form-control" type="email" name="" id="correo" placeholder="Ingrese su correo..." required>
+                    </div>
+                    <!-- Formulario de datos de consulta -->
+                    <div class="form-group">
+                        <label for="consulta_sobre">Consulta sobre:</label>
+                        <select name="consulta_sobre" id="">
+                            <option value="1">Hoteleria</option>
+                            <option value="2">Restaurant</option>
+                            <option value="3">SPA</option>
+                            <option value="4">Eventos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="mensaje" cols="30" rows="5" placeholder="Escirba aqui su consulta..." required></textarea>
+                    </div>
+                    <!-- Otros formularios -->
+                    <div class="form-group">
+                        <input type="checkbox" id="acepto-correos">
+                        <label for="acepto-correos">Deseo que me envien promociones a mi correo electronico</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn">Vaciar campos</button>
+                        <button type="submit" class="btn">Enviar consulta</button>
+                    </div>
+                </form>
+            </section>
+            <!-- Otros contactos -->
+            <section class="contactoOpcionDos ventanaBordes">
+                <img class="imageTelefono" src="https://res.cloudinary.com/lasotap/image/upload/v1623967756/CoderHouse/desarrolloWeb/proyecto_hotel/media/images/contacto/telefono.png" alt="imagenTelefonoContacto">
+                <p>Llamanos al:</p>
+                <p>1234-5678</p>
+                <a class="imageWPP" href="https://api.whatsapp.com/send?phone=+54 9 11 2223-2216" target="_blank"> <img src="https://res.cloudinary.com/lasotap/image/upload/v1626137812/CoderHouse/desarrolloWeb/proyecto_hotel/media/images/contacto/boton-wp.png" alt="imagenLinkWhatsApp"> </a>
+            </section>
+        </div>
+    </main>
+    <!-- Inicio de footer -->
+    <footer>
+        <div>
+            <div class="gridFooter">
+                <div class="flexRedes">
+                    <button class="btn red--instagram"> <a class="enlaceBoton" href="">INSTAGRAM</a> </button>
+                    <button class="btn red--facebook"> <a class="enlaceBoton" href="">FACEBOOK</a> </button>
+                    <button class="btn red--twitter"> <a class="enlaceBoton" href="">TWITTER</a> </button>
+                </div>
+                <div>
+                    <h4> <a href="./preguntas_frecuentes.html"> F.A.Q.</a></h4>
+                    <ul class="listaFooter">
+                        <li><a class="listaFooter__enlace" href="./preguntas_frecuentes.html#pregFrecuente1">¿A partir de qué hora puedo entrar en el hotel el día de llegada?</a></li>
+                        <li><a class="listaFooter__enlace" href="./preguntas_frecuentes.html#pregFrecuente2">¿Puedo cancelar mi reserva?</a></li>
+                        <li><a class="listaFooter__enlace" href="./preguntas_frecuentes.html#pregFreceunte3">¿Existe alguna norma de vestimenta o protocolo en el hotel?</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="derechosFooter">
+                <p>Todos los derehcos reservados</p>
+                <p>Diseñado por PL</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin de footer -->
+    <!-- JS links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fin de JS links -->
+</body>
+</html>

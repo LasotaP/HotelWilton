@@ -1,0 +1,612 @@
+
+@import "variables";
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Open Sans', sans-serif !important;
+}
+ 
+
+@media screen and (max-width: 600px) {
+
+    // HEADER
+
+    header {
+        
+        background-color: $colorOscuro;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        width: 100%;
+        
+        #tituloHeader {
+            display: none;
+        }
+
+        .flexHeader {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+
+            div {
+                width: 30%;
+                a {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .listaNav{
+            list-style-type: none;
+            padding-top: 15%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+
+            #enlaceInicio{
+                display: none;
+            }
+
+            #enlaceFAQ {
+                display: none;
+            }
+
+            .listaNav__enlace {
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-size: 100%;
+            }
+
+            .listaNav__lista {
+                display: none;
+            }
+
+            li {
+                padding-right: 10%;
+            }
+        }
+
+        .cajaHeader {
+            text-align: left;
+        }
+
+    }
+
+    // INDEX
+
+    .gridVentana {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+
+        img {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2%;
+        }
+    }
+
+    .ventanaBordes {
+        margin: 2.5%;
+        padding: 2.5%;
+        border: solid 3px $colorOscuro; 
+    }
+
+    // GALERIA
+
+    .flexGaleria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            width: 40%;
+            padding: 1%;
+            transition: all 0.5s;
+        }
+    }
+
+    @for $i from 5 to 11 {
+        .flexImage#{$i} {
+            display: none;
+        }
+    }
+
+    .subtituloGaleria {
+        text-align: center;
+    }
+
+
+    // CONTACTO
+
+    .grillaContacto {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+    
+    .contactoOpcionUno {
+        legend{
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #d1d1d1;
+        }
+
+    }
+
+    .contactoOpcionDos {
+
+        text-align: center;
+
+        .imageTelefono {
+            width: 30%;
+        }
+        .imageWPP {
+            width: 100%;
+        }
+        
+    }
+    
+    // FOOTER
+    
+    footer {
+        background-color: #2b3a6b;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        width: 100%;
+        text-align: center;
+
+        .derechosFooter {
+            color: rgb(169, 169, 169);
+            font-size: 50%;
+            text-align: center;
+            padding-bottom: 0%;
+        }
+
+        h4 {
+            a {
+                text-decoration: none;
+                color: $colorEnlaces;
+            }
+        } 
+
+        .flexRedes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            @each $red,$colorRedes in $mapRedes {
+                .red--#{$red}{
+                    background: $colorRedes;
+                }
+            }
+
+            .enlaceBoton {
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-weight: bold;
+            }
+
+        }
+
+        .listaFooter {
+            display: none;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    
+    // HEADER
+
+    header {
+        background-color: $colorOscuro;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        width: 100%;
+
+        #tituloHeader {
+            text-decoration: none;
+            color: $colorEnlaces;
+            font-size: 100%;
+        }
+
+        .flexHeader {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+
+            div {
+                width: 30%;
+                a {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        .listaNav{
+            list-style-type: none;
+            padding-top: 15%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+
+            #enlaceInicio{
+                display: none;
+            }
+
+
+            .listaNav__enlace {
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-size: 100%;
+            }
+
+            .listaNav__lista {
+                display: none;
+            }
+
+            li {
+                padding-right: 10%;
+            }
+        }
+
+        .cajaHeader {
+            text-align: left;
+        }
+
+    }
+
+    // INDEX
+
+    .gridVentana {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+
+        img {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2%;
+        }
+    }
+
+    .ventanaBordes {
+        margin: 2.5%;
+        padding: 2.5%;
+        border: solid 3px $colorOscuro; 
+    }
+
+    // GALERIA
+
+    .flexGaleria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            width: 30%;
+            padding: 1%;
+            transition: all 0.5s;
+        }
+    }
+
+    @for $i from 7 to 11 {
+        .flexImage#{$i} {
+            display: none;
+        }
+    }
+
+    .subtituloGaleria {
+        text-align: center;
+    }
+
+
+    // CONTACTO
+
+    .grillaContacto {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+    }
+    
+    .contactoOpcionUno {
+        legend{
+            font-weight: bold;
+        }
+        
+        button {
+            background-color: #d1d1d1;
+        }
+
+    }
+
+    .contactoOpcionDos {
+
+        text-align: center;
+
+        .imageTelefono {
+            width: 30%;
+        }
+        .imageWPP {
+            width: 100%;
+        }
+        
+    }
+    
+    // FOOTER
+    
+    footer {
+        background-color: #2b3a6b;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        width: 100%;
+        text-align: center;
+
+        .derechosFooter {
+            color: rgb(169, 169, 169);
+            font-size: 50%;
+            text-align: center;
+            padding-bottom: 0%;
+        }
+
+        h4 {
+            a {
+                text-decoration: none;
+                color: $colorEnlaces;
+            }
+        } 
+
+        .flexRedes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            @each $red,$colorRedes in $mapRedes {
+                .red--#{$red}{
+                    background: $colorRedes;
+                }
+            }
+
+            .enlaceBoton {
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-weight: bold;
+            }
+
+        }
+
+        .listaFooter{
+            display: none;
+        }
+    }
+
+} 
+
+
+@media screen and (min-width: 992px) {
+    // HEADER
+
+    header{
+
+        background-color: $colorOscuro;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        width: 100%;
+
+        #tituloHeader {
+            text-decoration: none;
+        }
+
+        .flexHeader {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+
+            .cajaHeader{
+                text-align: left;
+            }
+
+            div {
+                width: 30%;
+                a {
+                    img {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+
+        h1{
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-size: 100%;
+            }
+        }
+
+        nav{
+            .listaNav {
+                list-style-type: none;
+                padding-top: 10%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+
+                .listaNav__enlace {
+                    text-decoration: none;
+                    color: $colorEnlaces;
+                }
+            }
+
+            ul{
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    // INDEX
+
+    .gridVentana {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2.5%;
+        img {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    .ventanaBordes {
+        margin: 2.5%;
+        padding: 2.5%;
+        border: solid 3px $colorOscuro 
+    }
+
+    .bloqueInfo {
+        .bloqueInfo__texto {
+            color: #444242;
+        }
+    }
+
+
+    // SERVICIOS
+
+    .servicios {
+        section {
+            margin: 2.5%;
+            padding: 2.5%;
+            border: solid 3px $colorOscuro;
+        }
+    }
+
+    // GALERIA
+
+    .flexGaleria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        img {
+            width: 18%;
+            padding: 1%;
+            transition: all 0.5s;
+        }
+        img:hover{
+            transform: scale(1.25,1.25);
+        }
+    }
+
+    .subtituloGaleria {
+        text-align: center;
+    }
+
+    // CONTACTO
+
+    .contactoOpcionUno {
+        legend{
+            font-weight: bold;
+        }
+    }
+
+    .contactoOpcionDos {
+        text-align: center;
+    }
+
+    .grillaContacto {
+        margin: 2.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2%;
+    }
+
+    fieldset {
+        margin: 2%;
+        padding: 1%;
+    }
+
+    // PREGUNTAS FRECUENTES
+
+    .preguntasFrecuentes {
+        text-align: center;
+    }
+
+    // FOOTER 
+
+    footer {
+        background-color: #2b3a6b;
+        color: #a4b5bb;
+        padding-top: 3%;
+        padding-bottom: 1%;
+        width: 100%;
+        .listaFooter {
+            .listaFooter__enlace {
+                text-decoration: none;
+                color: $colorEnlaces;
+            }
+        }
+        .derechosFooter {
+            color: rgb(169, 169, 169);
+            font-size: 50%;
+            text-align: center;
+            padding-bottom: 0%;
+            padding-top: 2%;
+        }
+
+        h4 {
+            a {
+                text-decoration: none;
+                color: $colorEnlaces;
+            }
+        }
+
+        .gridFooter {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .flexRedes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            @each $red,$colorRedes in $mapRedes {
+                .red--#{$red}{
+                    background: $colorRedes;
+                }
+            }
+
+            .enlaceBoton {
+                text-decoration: none;
+                color: $colorEnlaces;
+                font-weight: bold;
+            }
+
+        }
+
+
+    }
+}
