@@ -198,6 +198,10 @@
 
         .listaFooter {
             display: none;
+            a:hover {
+                width: 100%;
+                background-color: $colorEnlaces;
+            }
         }
     }
 
@@ -410,6 +414,7 @@
 
         #tituloHeader {
             text-decoration: none;
+            color: $colorEnlaces;
         }
 
         .flexHeader {
@@ -575,11 +580,9 @@
             padding-top: 2%;
         }
 
-        h4 {
-            a {
-                text-decoration: none;
-                color: $colorEnlaces;
-            }
+        #tituloFooter {
+            text-decoration: none;
+            color: $colorEnlaces;
         }
 
         .gridFooter {

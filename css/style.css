@@ -120,7 +120,10 @@
         color: #f0f3f4;
         font-weight: bold; }
     footer .listaFooter {
-      display: none; } }
+      display: none; }
+      footer .listaFooter a:hover {
+        width: 100%;
+        background-color: #f0f3f4; } }
 
 @media screen and (min-width: 601px) and (max-width: 991px) {
   header {
@@ -244,7 +247,8 @@
     padding-bottom: 1.5%;
     width: 100%; }
     header #tituloHeader {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #f0f3f4; }
     header .flexHeader {
       display: flex;
       flex-direction: row;
@@ -334,7 +338,7 @@
       text-align: center;
       padding-bottom: 0%;
       padding-top: 2%; }
-    footer h4 a {
+    footer #tituloFooter {
       text-decoration: none;
       color: #f0f3f4; }
     footer .gridFooter {
