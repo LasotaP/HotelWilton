@@ -63,10 +63,10 @@
                     </div>
                     <!-- Formulario de datos de consulta -->
                     <div class="form-group">
-                        <label for="consulta_sobre">Consulta sobre:</label>
-                        <select name="consulta_sobre" id="">
+                        <select class="form-select" name="consulta_sobre">
+                            <option selected>Consulta sobre</option>
                             <option value="1">Hoteleria</option>
-                            <option value="2">Restaurant</option>
+                            <option value="2">Servicios</option>
                             <option value="3">SPA</option>
                             <option value="4">Eventos</option>
                         </select>
@@ -76,12 +76,12 @@
                     </div>
                     <!-- Otros formularios -->
                     <div class="form-group">
-                        <input type="checkbox" id="acepto-correos">
+                        <input type="checkbox" id="acepto-correos" checked>
                         <label for="acepto-correos">Deseo que me envien promociones a mi correo electronico</label>
                     </div>
                     <div class="form-group">
-                        <button type="reset" class="btn">Vaciar campos</button>
-                        <button type="submit" class="btn">Enviar consulta</button>
+                        <button type="reset" class="btn btn-secondary">Vaciar campos</button>
+                        <button type="submit" class="btn btn-primary">Enviar consulta</button>
                     </div>
                 </form>
             </section>
@@ -99,12 +99,12 @@
         <div>
             <div class="gridFooter">
                 <div class="flexRedes">
-                    <button class="btn red--instagram"> <a class="enlaceBoton" href="">INSTAGRAM</a> </button>
-                    <button class="btn red--facebook"> <a class="enlaceBoton" href="">FACEBOOK</a> </button>
-                    <button class="btn red--twitter"> <a class="enlaceBoton" href="">TWITTER</a> </button>
+                    <button class="btn red--instagram"> <a class="enlaceBoton" href="../404.html">INSTAGRAM</a> </button>
+                    <button class="btn red--facebook"> <a class="enlaceBoton" href="../404.html">FACEBOOK</a> </button>
+                    <button class="btn red--twitter"> <a class="enlaceBoton" href="../404.html">TWITTER</a> </button>
                 </div>
                 <div>
-                    <h4> <a href="./preguntas_frecuentes.html"> F.A.Q.</a></h4>
+                    <h4> <a id="tituloFooter" href="./preguntas_frecuentes.html"> F.A.Q.</a></h4>
                     <ul class="listaFooter">
                         <li><a class="listaFooter__enlace" href="./preguntas_frecuentes.html#pregFrecuente1">¿A partir de qué hora puedo entrar en el hotel el día de llegada?</a></li>
                         <li><a class="listaFooter__enlace" href="./preguntas_frecuentes.html#pregFrecuente2">¿Puedo cancelar mi reserva?</a></li>

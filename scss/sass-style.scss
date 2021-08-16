@@ -145,7 +145,7 @@
         text-align: center;
 
         .imageTelefono {
-            width: 30%;
+            width: 25%;
         }
         .imageWPP {
             width: 100%;
@@ -343,7 +343,7 @@
         text-align: center;
 
         .imageTelefono {
-            width: 30%;
+            width: 25%;
         }
         .imageWPP {
             width: 100%;
@@ -457,8 +457,16 @@
                 justify-content: space-evenly;
 
                 .listaNav__enlace {
-                    text-decoration: none;
                     color: $colorEnlaces;
+                    text-decoration: none;
+                    background-image: linear-gradient($colorEnlaces,$colorEnlaces);
+                    background-position: 0% 100%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+                    transition: background-size .3s;
+                }
+                .listaNav__enlace:hover .listaNav__enlace:focus {
+                    background-size: 100% 2px;
                 }
             }
 
@@ -490,8 +498,12 @@
     }
 
     .bloqueInfo {
+        .bloqueInfo__titulo{
+            font-size: 2;
+        }
         .bloqueInfo__texto {
             color: #444242;
+            font-size: larger;
         }
     }
 
@@ -536,6 +548,12 @@
     }
 
     .contactoOpcionDos {
+        p {
+            font-size: x-large;
+        }
+        .imageTelefono{
+            width: 25%;
+        }
         text-align: center;
     }
 
@@ -567,9 +585,18 @@
         padding-bottom: 1%;
         width: 100%;
         .listaFooter {
+
             .listaFooter__enlace {
-                text-decoration: none;
                 color: $colorEnlaces;
+                text-decoration: none;
+                background-image: linear-gradient($colorEnlaces,$colorEnlaces);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+            }
+            .listaFooter__enlace:hover, .listaFooter__enlace:focus {
+                background-size: 100% 2px;
             }
         }
         .derechosFooter {

@@ -87,7 +87,7 @@
   .contactoOpcionDos {
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
-      width: 30%; }
+      width: 25%; }
     .contactoOpcionDos .imageWPP {
       width: 100%; }
   footer {
@@ -205,7 +205,7 @@
   .contactoOpcionDos {
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
-      width: 30%; }
+      width: 25%; }
     .contactoOpcionDos .imageWPP {
       width: 100%; }
   footer {
@@ -274,8 +274,15 @@
       flex-wrap: nowrap;
       justify-content: space-evenly; }
       header nav .listaNav .listaNav__enlace {
+        color: #f0f3f4;
         text-decoration: none;
-        color: #f0f3f4; }
+        background-image: linear-gradient(#f0f3f4, #f0f3f4);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+      header nav .listaNav .listaNav__enlace:hover .listaNav__enlace:focus {
+        background-size: 100% 2px; }
     header nav ul ul {
       display: none; }
   .gridVentana {
@@ -289,8 +296,11 @@
     margin: 2.5%;
     padding: 2.5%;
     border: solid 3px #1a2341; }
+  .bloqueInfo .bloqueInfo__titulo {
+    font-size: 2; }
   .bloqueInfo .bloqueInfo__texto {
-    color: #444242; }
+    color: #444242;
+    font-size: larger; }
   .servicios section {
     margin: 2.5%;
     padding: 2.5%;
@@ -312,6 +322,10 @@
     font-weight: bold; }
   .contactoOpcionDos {
     text-align: center; }
+    .contactoOpcionDos p {
+      font-size: x-large; }
+    .contactoOpcionDos .imageTelefono {
+      width: 25%; }
   .grillaContacto {
     margin: 2.5%;
     display: grid;
@@ -330,8 +344,15 @@
     padding-bottom: 1%;
     width: 100%; }
     footer .listaFooter .listaFooter__enlace {
+      color: #f0f3f4;
       text-decoration: none;
-      color: #f0f3f4; }
+      background-image: linear-gradient(#f0f3f4, #f0f3f4);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s; }
+    footer .listaFooter .listaFooter__enlace:hover, footer .listaFooter .listaFooter__enlace:focus {
+      background-size: 100% 2px; }
     footer .derechosFooter {
       color: darkgray;
       font-size: 50%;
