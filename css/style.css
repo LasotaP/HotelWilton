@@ -38,7 +38,7 @@
       header .listaNav .listaNav__lista {
         display: none; }
       header .listaNav li {
-        padding-right: 10%; }
+        padding-right: 5%; }
     header .cajaHeader {
       text-align: left; }
   .gridVentana {
@@ -82,8 +82,6 @@
     justify-items: center; }
   .contactoOpcionUno legend {
     font-weight: bold; }
-  .contactoOpcionUno button {
-    background-color: #d1d1d1; }
   .contactoOpcionDos {
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
@@ -200,8 +198,6 @@
     justify-items: center; }
   .contactoOpcionUno legend {
     font-weight: bold; }
-  .contactoOpcionUno button {
-    background-color: #d1d1d1; }
   .contactoOpcionDos {
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
@@ -259,7 +255,8 @@
       header .flexHeader div {
         width: 30%; }
         header .flexHeader div a img {
-          width: 15%; }
+          width: 20%;
+          margin-bottom: 6%; }
     header h1 {
       display: inline-block; }
       header h1 a {
@@ -268,7 +265,7 @@
         font-size: 100%; }
     header nav .listaNav {
       list-style-type: none;
-      padding-top: 10%;
+      padding-top: 5%;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
