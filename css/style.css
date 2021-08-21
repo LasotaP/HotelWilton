@@ -53,6 +53,8 @@
     margin: 2.5%;
     padding: 2.5%;
     border: solid 3px #1a2341; }
+  .bloqueInfo {
+    margin-bottom: 60%; }
   .flexGaleria {
     display: flex;
     flex-direction: row;
@@ -80,9 +82,13 @@
     display: grid;
     grid-template-rows: 50% 50%;
     justify-items: center; }
-  .contactoOpcionUno legend {
-    font-weight: bold; }
+  .contactoOpcionUno {
+    margin: 2%;
+    margin-bottom: 80%; }
+    .contactoOpcionUno legend {
+      font-weight: bold; }
   .contactoOpcionDos {
+    margin-top: 10%;
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
       width: 25%; }
@@ -173,6 +179,12 @@
     margin: 2.5%;
     padding: 2.5%;
     border: solid 3px #1a2341; }
+  .bloqueInfo {
+    margin-top: 10%;
+    margin-bottom: 20%; }
+    .bloqueInfo .bloqueInfo__texto {
+      color: #444242;
+      font-size: larger; }
   .flexGaleria {
     display: flex;
     flex-direction: row;
@@ -196,9 +208,12 @@
     display: grid;
     grid-template-rows: 50% 50%;
     justify-items: center; }
-  .contactoOpcionUno legend {
-    font-weight: bold; }
+  .contactoOpcionUno {
+    margin-bottom: 20%; }
+    .contactoOpcionUno legend {
+      font-weight: bold; }
   .contactoOpcionDos {
+    margin-top: 5%;
     text-align: center; }
     .contactoOpcionDos .imageTelefono {
       width: 25%; }

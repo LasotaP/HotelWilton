@@ -1,11 +1,7 @@
 
 @import "variables";
+@import "resets";
 
-* {
-    margin: 0; 
-    padding: 0;
-    font-family: 'Open Sans', sans-serif !important;
-}
  
 
 @media screen and (max-width: 600px) {
@@ -96,6 +92,10 @@
         border: solid 3px $colorOscuro; 
     }
 
+    .bloqueInfo {
+        margin-bottom: 60%;
+    }    
+
     // GALERIA
 
     .flexGaleria{
@@ -130,6 +130,8 @@
     }
     
     .contactoOpcionUno {
+        margin: 2%;
+        margin-bottom: 80%;
         legend{
             font-weight: bold;
         }
@@ -138,6 +140,8 @@
     }
 
     .contactoOpcionDos {
+
+        margin-top: 10%;
 
         text-align: center;
 
@@ -291,6 +295,15 @@
         border: solid 3px $colorOscuro; 
     }
 
+    .bloqueInfo{
+        margin-top: 10%;
+        margin-bottom: 20%;
+        .bloqueInfo__texto {
+            color: #444242;
+            font-size: larger;
+        }
+    }
+
     // GALERIA
 
     .flexGaleria{
@@ -325,6 +338,7 @@
     }
     
     .contactoOpcionUno {
+        margin-bottom: 20%;
         legend{
             font-weight: bold;
         }
@@ -333,7 +347,7 @@
     }
 
     .contactoOpcionDos {
-
+        margin-top: 5%;
         text-align: center;
 
         .imageTelefono {
